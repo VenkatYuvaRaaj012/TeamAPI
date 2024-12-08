@@ -10,8 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TeamApiDb;Trusted_Connection=True;"));
+builder.Services.AddDbContext<AppDbContext>();
 
 
 // Register NSwag OpenAPI document generation
