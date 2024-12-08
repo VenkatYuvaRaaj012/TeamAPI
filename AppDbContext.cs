@@ -14,6 +14,7 @@ namespace TeamApi
         {
         }
 
+
         // Optional: Override OnConfiguring for design-time support
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
